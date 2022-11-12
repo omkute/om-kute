@@ -1,5 +1,6 @@
 import Image from 'next/image'
 
+
 import { BsMoonStarsFill } from "react-icons/bs"
 import { AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube } from "react-icons/Ai"
 import vector from "../public/dev-ed-wave.png"
