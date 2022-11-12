@@ -39,6 +39,7 @@ export default function Home() {
                 <Image
                   src={vector}
                   className="block"
+                  alt='banner'
                 />
                 <div className="icon_info pt-9">
 

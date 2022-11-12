@@ -11,6 +11,7 @@ function Cards() {
     <div className='pb-9'>
       <div className='text-center shadow-xl rounded-xl py-4'>
         <Image
+        alt='img'
         src={design}
         height="100pxss"
         width="100px"
