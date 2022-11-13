@@ -4,8 +4,6 @@ import Image from 'next/image'
 import { BsMoonStarsFill } from "react-icons/bs"
 import { AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube } from "react-icons/Ai"
 import vector from "../public/dev-ed-wave.png"
-import elon_img from "../public/elon.jpg"
-import design from "../public/design.png"
 import Cards from './components/Cards'
 
 
@@ -74,6 +72,7 @@ export default function Home() {
               <Cards className="md:px-5" />
               <Cards className="md:px-5" />
               <Cards className="md:px-5" />
+
             </div>
           </section>
         </section>

@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-
 import design from "../../public/design.png";
 
 function Cards() {
