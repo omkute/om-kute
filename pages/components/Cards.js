@@ -15,7 +15,7 @@ function Cards() {
             theory
           </p>
           <h4 className="py-4 text-cyan-600 sm: px-4">
-            Programming Language's I use
+            Programming Language's I use 3
           </h4>
           <p className="py-1 text-gray-800">Html</p>
           <p className="py-1 text-gray-800">CSS</p>
