@@ -14,7 +14,7 @@ export default function Home() {
     <div>
 
       <title>Om Kute</title>
-      <main className="bg-white px-10 ">
+      <main className="bg-white px-4 ">
         <section className="  h-screen">
           {/* navbar */}
           <nav className="py-10 mb-12 flex justify-between">
