@@ -56,6 +56,10 @@ export default function Home() {
   //   localStorage.setItem("theme","dark");
   //   iconToggle();
   // }
+  const dark=()=>{
+    alert("working on dark mode >toggler but dark/light mode will work with you system dark/light mode")
+    
+  }
   
 
 
@@ -66,25 +70,27 @@ export default function Home() {
     <div>
 
       <title>Om Kute</title>
-      <main className="bg-white dark:bg-black  px-4 ">
-        <section className="  h-screen">
+      <main className="bg-white dark:bg-black   ">
+        <section className=" h-screen">
           {/* navbar */}
-          <nav className="py-10 mb-12 flex justify-between">
+          <nav className="py-10 mb-12 flex justify-between px-2 md:px-6">
 
 
 
-            <h1 className="text-xl font-burton">portfolio</h1>
+            <h1 className="text-xl font-burton dark:text-white">portfolio</h1>
             <ul className="flex items-center ">
               <li className="px-3">
-                <BsMoonStarsFill className="cursor-pointer moon text-red-500" />
-                <BiSun className='moon text-red-500'/>
+                <BsMoonStarsFill 
+                onClick={dark}
+                className="cursor-pointer moon text-black dark:text-white" />
+                {/* <BiSun className='moon text-black dark:text-white'/> */}
               </li>
-              <li><a href="#" className="bg-gradient-to-r  from-cyan-500 to-teal-500 p-2 rounded text-white text-md ml-6">resume</a></li>
+              <li><a href="#" className="bg-gradient-to-r  from-cyan-500 to-teal-500 p-2 rounded text-white text-md ml-6">Contact</a></li>
             </ul>
           </nav>
 
-          <div>
-            <div className=" text-center p-10 ">
+          <div className='dark:bg-black mx-7 rounded-xl'>
+            <div className=" text-center p-10 md:p-0 mb-3">
               {/* flex div for md */}
               <div className=" md:flex items-center ">
                 {/* banner image */}
@@ -93,25 +99,25 @@ export default function Home() {
                   className="block"
                   alt='banner'
                 />
-                <div className="icon_info pt-9">
+                <div className="icon_info pt-10">
 
 
 
                   {/* TODo-make h2 graditent like apple */}
-                  <div className="div2">
-                    <h2 className="text-5xl text-cyan-500">Om Santosh Kute</h2>
+                  <div className="div2 dark:bg-black  ">
+                    <h2 className="text-5xl text-cyan-500 pb-5 font-extrabold">Hi, I'm Om Kute</h2>
                     <h3 className="text-2xl text dark:text-white " >A Engineering Student studying Computer Science</h3>
-                    <p className="text-md dark:text-white py-5 text-gray-800">
+                    <p className="text-md dark:text-white py-5 text-gray-800 block">
                       Hey, I am Computer Science Student ,Studiying at
                       Anuradha Engineering College.
                       Currently I am Learning web development and java along with DSA
                     </p>
                   </div>
                   {/* Socila Icons */}
-                  <div className="flex text-5xl justify-center gap-x-7">
-                    <AiFillTwitterCircle />
-                    <AiFillLinkedin />
-                    <AiFillYoutube />
+                  <div className="dark:bg-black flex text-5xl justify-center gap-x-7">
+                    <AiFillTwitterCircle href=""  className='dark:text-white cursor-pointer hover:bg-blue-300 rounded-full ' />
+                    <AiFillLinkedin href=""       className='dark:text-white cursor-pointer hover:bg-blue-800 rounded-md' />
+                    <AiFillYoutube  href=""       className='dark:text-white cursor-pointer hover:bg-red-500 rounded-md' />
                   </div>
                 </div>
               </div>
@@ -120,12 +126,12 @@ export default function Home() {
 
           {/* Section 2 Cards */}
           <section className=''>
-            <h3 className='text-center pt-6 font-bold text-xl' >Projects</h3>
+          <h3 className='text-center  font-bold text-xl dark:text-cyan-300 dark:bg-black' >Projects</h3>
             <div className=" md:flex-5 sm:flex ">
               <Cards className="md:px-5" />
               <Cards className="md:px-5" />
               <Cards className="md:px-5" />
-
+              
             </div>
           </section>
         </section>
