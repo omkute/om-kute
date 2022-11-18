@@ -4,11 +4,11 @@ import design from "../../public/design.png";
 
 function Cards() {
   return (
-    <div className="bg-black">
+    <div className=" bg-white dark:bg-black">
       
       {/* Cards */}
       <div className="pb-9 px-5 py-8 r" >
-        <div href="#" className=" cursor-pointer text-center shadow-xl rounded-xl py-4 dark:bg-slate-800 dark:text-stone-50 hover:bg-slate-700">
+        <div href="#" className=" cursor-pointer text-center shadow-xl rounded-xl py-4 bg-white dark:bg-slate-800 dark:text-stone-50 hover:bg-slate-700">
           <Image alt="img" src={design} height="100pxss" width="100px" />
           <h3 className="my-10 font-medium p-t8">Beautyful designs</h3>
           <p className="py-2 sm: px-4">
