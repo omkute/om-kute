@@ -7,3 +7,6 @@
     font-family: "burtons";
     src: url("../public/Burtons.otf");
 }
+.display-none{
+    @apply hidden; 
+}
