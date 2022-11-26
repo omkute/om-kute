@@ -62,7 +62,7 @@ export default function Home() {
   return (
     <div>
       <title>Om Kute</title>
-      <meta >google-site-verification: googlef843243af68f8735.html</meta>
+      <meta name="google-site-verification" content="ArLiBn0nEAgnKgeijkX60K5nzHQLqj7uCvNDiyuw_XY" />
       <main className="bg-white dark:bg-black   ">
         <section className=" h-screen">
           {/* navbar */}
