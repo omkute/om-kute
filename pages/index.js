@@ -62,6 +62,7 @@ export default function Home() {
   return (
     <div>
       <title>Om Kute</title>
+      <meta >google-site-verification: googlef843243af68f8735.html</meta>
       <main className="bg-white dark:bg-black   ">
         <section className=" h-screen">
           {/* navbar */}
@@ -113,12 +114,13 @@ export default function Home() {
                       <AiFillTwitterCircle className="dark:text-white cursor-pointer hover:bg-blue-300 rounded-full " />
                     </Link>
 
-                    <Link href="https://www.linkedin.com/in/om-kute-a97014196/" target={"_blank"} >
-                      
+                    <Link
+                      href="https://www.linkedin.com/in/om-kute-a97014196/"
+                      target={"_blank"}
+                    >
                       <AiFillLinkedin className="dark:text-white cursor-pointer hover:bg-blue-800 rounded-md" />
                     </Link>
-                    <Link href="https://www.youtube.com/channel/UC_2DelxRgR37i0-EyyKMBTg/featured" >
-                      
+                    <Link href="https://www.youtube.com/channel/UC_2DelxRgR37i0-EyyKMBTg/featured">
                       <AiFillYoutube className="dark:text-white cursor-pointer hover:bg-red-500 rounded-md" />
                     </Link>
                   </div>
