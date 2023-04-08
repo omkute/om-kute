@@ -64,7 +64,7 @@ export default function Home() {
   return (
     <div>
       <title>Om Kute</title>
-      
+     
       <main className="bg-white dark:bg-black   ">
         <section className=" h-screen">
           {/* navbar */}
