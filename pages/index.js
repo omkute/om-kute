@@ -118,7 +118,7 @@ export default function Home() {
 
                     <Link
                       href="https://www.linkedin.com/in/om-kute-a97014196/"
-                      target={"_blank"}
+                      rel="noreferrer"
                     >
                       <AiFillLinkedin className="dark:text-white cursor-pointer hover:bg-blue-800 rounded-md" />
                     </Link>
