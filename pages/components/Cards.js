@@ -11,7 +11,7 @@ function Cards() {
         <div href="#" className=" cursor-pointer text-center shadow-xl rounded-xl py-4 bg-white dark:bg-slate-800 dark:text-stone-50 hover:bg-slate-700">
           <Image className="rounded-lg" alt="img" src={design} height="400px" width="350px" />
           <h3 className="my-10 text-xl  font-medium p-t8">Tindog website</h3>
-          <a className="text-blue-500 text-lg"                       target={"_blank"}
+          <a className="text-blue-500 text-lg"                     
  href="https://omkute.github.io/TinDog/">Link to live site</a>
           <p className="py-2 sm: px-4">
             This is project from web development bootcamp
