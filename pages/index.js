@@ -8,9 +8,11 @@ import {
   AiFillTwitterCircle,
   AiFillLinkedin,
   AiFillYoutube,
+  AiFillGithub,
 } from "react-icons/ai";
 import vector from "../public/dev-ed-wave.png";
 import Cards from "./components/Cards";
+
 
 export default function Home() {
   // // icon variables
@@ -62,7 +64,7 @@ export default function Home() {
   return (
     <div>
       <title>Om Kute</title>
-      <meta >google-site-verification: googlef843243af68f8735.html</meta>
+      
       <main className="bg-white dark:bg-black   ">
         <section className=" h-screen">
           {/* navbar */}
@@ -123,6 +125,10 @@ export default function Home() {
                     <Link href="https://www.youtube.com/channel/UC_2DelxRgR37i0-EyyKMBTg/featured">
                       <AiFillYoutube className="dark:text-white cursor-pointer hover:bg-red-500 rounded-md" />
                     </Link>
+                    <Link href="https://github.com/omkute">
+                      <AiFillGithub className="dark:text-white cursor-pointer hover:bg-gray-500 rounded-md" />
+                    </Link>
+
                   </div>
                 </div>
               </div>
@@ -131,13 +137,13 @@ export default function Home() {
 
           {/* Section 2 Cards */}
           <section className="">
-            <h3 className="text-center  font-bold text-xl dark:text-cyan-300 dark:bg-black">
+            <h3 className="text-center center font-bold text-xl dark:text-cyan-300 dark:bg-black">
               Projects
             </h3>
-            <div className=" md:flex-5 sm:flex ">
-              <Cards className="md:px-5" />
-              <Cards className="md:px-5" />
-              <Cards className="md:px-5" />
+            <div className=" md:flex-5 sm:flex bg-black">
+              <Cards src="" className="md:px-5" />
+              <Cards src="https://postimg.cc/nsJy7Pyq" className="md:px-5" />
+             
             </div>
           </section>
         </section>
