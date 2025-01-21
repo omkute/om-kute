@@ -72,15 +72,12 @@ export default function Home() {
             <h1 className="text-xl font-burton dark:text-white">portfolio</h1>
             <ul className="flex items-center ">
               <li className="px-3">
-                <BsMoonStarsFill
-                  onClick={dark}
-                  className="cursor-pointer moon text-black dark:text-white"
-                />
+                
                 {/* <BiSun className='moon text-black dark:text-white'/> */}
               </li>
               <li>
                 <a
-                  href="#"
+                  href="tel:90224616660"
                   className="bg-gradient-to-r  from-cyan-500 to-teal-500 p-2 rounded text-white text-md ml-6"
                 >
                   Contact
@@ -141,9 +138,7 @@ export default function Home() {
               Projects
             </h3>
             <div className=" md:flex-5 sm:flex bg-black">
-              <Cards src="" className="md:px-5" />
-              <Cards src="https://postimg.cc/nsJy7Pyq" className="md:px-5" />
-             
+              
             </div>
           </section>
         </section>
