@@ -1,9 +1,9 @@
 import Image from "next/image";
 import React, { useEffect } from "react";
-import { useTheme } from "next-theme";
+// import { useTheme } from "next-theme";
 import Link from "next/link";
-import { BsMoonStarsFill } from "react-icons/bs";
-import { BiSun } from "react-icons/bi";
+// import { BsMoonStarsFill } from "react-icons/bs";
+// import { BiSun } from "react-icons/bi";
 import {
   AiFillTwitterCircle,
   AiFillLinkedin,
@@ -11,50 +11,11 @@ import {
   AiFillGithub,
 } from "react-icons/ai";
 import vector from "../public/dev-ed-wave.png";
-import Cards from "./components/Cards";
+import Card from "./components/Card";
 
 
 export default function Home() {
-  // // icon variables
-  // const sunIcon = document.querySelector('.sun');
-  // const moonIcon = document.querySelector('.moon');
-
-  // // theme variables
-  //  const userTheme = localStorage.getItem('theme');
-
-  //  const systemTheme =window.matchMedia("(pefers-color-scheme:dark)").matches;
-
-  // //  icon toggling
-
-  // const iconToggle=()=>{
-  //   moonIcon.classList.toggle("display-none");
-  //   sunIcon.classList.toggle("display-none");
-  // };
-
-  // // initial theme check
-
-  // const themeCheck = ()=>{
-  //   if(userTheme === "dark" || (!userTheme && systemTheme)){
-  //     document.documentElement.classList.add("dark");
-
-  //     moonIcon.classList.add("display-none");
-  //     return ;
-  //   }
-  //   sunIcon.classList.add("display-none");
-  // };
-  // // manual theme switch
-
-  // const themeSwitch =()=>{
-  //   if(document.documentElement.classList.contains("dark")){
-  //     document.documentElement.classList.remove("dark");
-  //     localStorage.setItem("theme","light");
-  //     iconToggle();
-  //     return;
-  //   }
-  //   document.documentElement.classList.add("dark")
-  //   localStorage.setItem("theme","dark");
-  //   iconToggle();
-  // }
+  
   const dark = () => {
     alert(
       "working on dark mode >toggler but dark/light mode will work with you system dark/light mode"
@@ -104,7 +65,7 @@ export default function Home() {
                     <p className="text-md dark:text-white py-5 text-gray-800 block">
                       Hey, I am Computer Science Student ,Studiying at Anuradha
                       Engineering College. Currently I am Learning web
-                      development and java along with DSA
+                      development and React-Native.
                     </p>
                   </div>
                   {/* Socila Icons */}
@@ -137,8 +98,25 @@ export default function Home() {
             <h3 className="text-center center font-bold text-xl dark:text-cyan-300 dark:bg-black">
               Projects
             </h3>
-            <div className=" md:flex-5 sm:flex bg-black">
-              
+            <div className=" md:flex-5 sm:flex dark:bg-black">
+              <Card
+              projectName="Todo App"
+              projectDescription=" A todo application that is used to make todo task's, the todos are stored on cloud. This App has clean and userfriendly UI "
+              tags=" Nextjs Javascript MongoDB Rest-API"
+             
+              />
+              <Card
+              projectName="Todo App"
+              projectDescription=" A todo application that is used to make todo task's, the todos are stored on cloud. This App has clean and userfriendly UI "
+              tags=" Nextjs Javascript MongoDB Rest-API"
+             
+              />
+              <Card
+              projectName="Todo App"
+              projectDescription=" A todo application that is used to make todo task's, the todos are stored on cloud. This App has clean and userfriendly UI "
+              tags=" Nextjs Javascript MongoDB Rest-API"
+             
+              />
             </div>
           </section>
         </section>
