@@ -32,7 +32,7 @@ export default function ProjectCard({ id, name, description, features, image }: 
             >
                 <div>
                     <Image
-                        src="/images/face-recognition.jpg"
+                        src={`/images/${image}`}
                         alt="Face Recognition"
                         width={400}
                         height={350}

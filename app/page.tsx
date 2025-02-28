@@ -3,18 +3,15 @@ import Image from "next/image";
 import React from "react";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { BackgroundGradient } from "@/components/ui/background-gradient";
 import ProjectCard from "@/components/ui/ProjectCard";
 import { projects } from "@/data/projectData";
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from "embla-carousel-autoplay";
 import Skills from "@/components/ui/Skills";
-import { RxResume } from "react-icons/rx";
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
 import { BsTwitter } from "react-icons/bs";
 import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
-import { TfiEmail } from "react-icons/tfi";
 import { MdOutlineEmail } from "react-icons/md";
 import MobileMenu from "@/components/ui/MobileMenu";
 
@@ -23,7 +20,7 @@ import MobileMenu from "@/components/ui/MobileMenu";
 export default function Home() {
 
   const [copySuccess, setCopySuccess] = useState('copy');
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false, align: 'start' }, [
+  const [emblaRef] = useEmblaCarousel({ loop: false, align: 'start' }, [
     Autoplay({ delay: 3000 })
   ]);
 
@@ -53,7 +50,7 @@ export default function Home() {
   // BackgroundGradient
   return (
     <section className=" p-4">
-      <MobileMenu clasName="" />
+      <MobileMenu className="" />
       <div className="h-[95vh] items-center justify-center p-6 cursor-default bg-gradient-to-b from-purple-100 to-purple-600 rounded-3xl">
         <section className="md:flex items-center justify-between  max-w-7xl mx-auto h-full px-8 ">
           <motion.div
@@ -65,10 +62,10 @@ export default function Home() {
             <h1 className="text-4xl lg:text-6xl font-bold mb-6">
               <span className=" text-gray-600 "> Hi, </span>
               <br />
-              <span className="bg-white border-b-2 bg-clip-text drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]
-                text-transparent shadow-white">
-                I'm Om Santosh Kute
-              </span>
+              <p className="bg-white border-b-2 bg-clip-text drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]
+                text-transparent">
+               {" I'm Om Santosh Kute"}
+              </p>
             </h1>
             <motion.p
               className="text-xl lg:text-2xl text-gray-700 leading-relaxed"

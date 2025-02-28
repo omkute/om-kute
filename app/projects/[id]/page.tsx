@@ -6,8 +6,20 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 
 
+interface Project {
+    id: string;
+    name: string;
+    description: string;
+    livelink: string;
+    githublink: string;
+    image: string;
+    features: Array<{ name: string }>;
+  }
+
 export default function ProjectPage({ params }: { params: { id: string } }) {
-  const project = projects.find(p => p.id === params.id)
+
+    
+    const project = projects.find(p => p.id === params.id) as Project || undefined
 
   if (!project) {
     notFound()

@@ -28,7 +28,7 @@ function Skills({
         ai:Ai
     }[iconPackage];
 
-    const IconComponent = (Icons as any)[iconName];
+    const IconComponent = Icons[iconName as keyof typeof Icons];
 
     if(!IconComponent) {
         console.warn(`Icon ${iconName} not found in package ${iconPackage}`);
