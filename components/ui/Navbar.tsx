@@ -1,7 +1,9 @@
 "use client"
 import { Pause, Play } from 'lucide-react'
 import Link from 'next/link'
-import { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
+import { motion } from "framer-motion";
+
 
 const NavbarItems = [
     {
@@ -10,7 +12,7 @@ const NavbarItems = [
     },
     {
         name: 'Projects',
-        href: '/'
+        href: '#projects'
     },
     {
         name: 'About',
@@ -53,16 +55,23 @@ function Navbar() {
     }
 
     return (
-        <nav className='fixed top-12 left-0 right-0 mx-auto w-fit flex items-center justify-center h-10 rounded-full bg-[#EDEBEB] text-black z-10 shadow-md shadow-green-500 font-montserrat gap-y-2 border-2  border-green-500'>
-            <div className='ml-3 cursor-pointer'>
-            { isPlaying ?  <Pause onClick={handlePlay} /> : <Play  onClick={handlePlay} />}
+        <motion.nav
+            className=' hidden  md:fixed top-10 md:left-0 right-0 mx-auto md:w-fit  flex-col  md:flex md:flex-row items-center justify-center md:h-12 md:rounded-full bg-[#EDEBEB] text-black z-20 shadow-md shadow-black font-montserrat gap-y-2 border-2'
+            initial={{ opacity:0, y:-50 }}
+            animate={{ opacity:1, y:0, scale:1 }}
+            transition={{ duration:0.8 }}
+
+         >
+            <div className='ml-3 cursor-pointer text-green-500 '>
+            { isPlaying ?  <Pause  onClick={handlePlay} /> : <Play  onClick={handlePlay} />}
             </div>
             {NavbarItems.map((item,index)=>(
             <Link className='hover:scale-110 hover:bg-white rounded-full p-2 transition-transform duration-200' key={index} href={item.href}>
                 <span>{item.name}</span>
             </Link>
             ))}
-        </nav>
+            
+        </motion.nav>
     )
 }
 
