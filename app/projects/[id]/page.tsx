@@ -16,7 +16,15 @@ interface Project {
     features: Array<{ name: string }>;
   }
 
-export default function ProjectPage({ params }: { params: { id: string } }) {
+  interface PageProps {
+    params: {
+        id: string;
+    };
+    searchParams: { [key: string]: string | string[] | undefined };
+}
+
+export default function ProjectPage(
+    { params }: { params: { id: string } }) {
 
     
     const project = projects.find(p => p.id === params.id) as Project || undefined
